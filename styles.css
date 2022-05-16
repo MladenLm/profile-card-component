@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --darkcyan: hsl(185, 75%, 39%);
+    --verydarkdesaturatedblue: hsl(229, 23%, 23%);
+    --darkgrayishblue: hsl(227, 10%, 46%);
+    --darkgray: hsl(0, 0%, 59%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--darkcyan);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    min-height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;}
+
+main {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.background {
+    width: 100%;
+    border-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+    border-top: 1px solid gainsboro;
+    padding: 20px 0 20px 0;
+}
+
+.photo {
+    border-radius: 50%;
+    margin: -50px;
+    border: 5px solid white;
+}
+
+.text {
+    margin-top: 20%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.container-bold {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.container-grey {
+    color: var(--darkgrayishblue);
+    padding-bottom: 10%;  
+    font-size: 13px;  
+}
+
+.span {
+    height: 1px;
+    border-bottom: 1px solid var(--darkgray);
+}
+
+.text-name {
+    display: inline;
+    font-weight: 900;
+}
+
+.text-age {
+    display: inline;
+    font-size: large;
+    color: var(--darkgray);
+}
+
+.text-city {
+    margin-top: 10%;
+    color: var(--darkgrayishblue);
+}
+
+@media only screen and (min-width: 375px) {
+    main {
+        max-width: 350px;
+    }
+}
